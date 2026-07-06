@@ -13,4 +13,4 @@ jobs:
     steps:
 
       - name: Print Message
-        run: echo "Hello StarWeb!"
+        run: echo "Welcome to the Hello Workflow!"
