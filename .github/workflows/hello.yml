@@ -1,0 +1,32 @@
+name: Linux Demo
+
+on:
+  push:
+    branches:
+      - develop
+      - feature/**
+
+jobs:
+  linux-demo:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Show Current Folder
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: Show Current User
+        run: whoami
+
+      - name: Show Operating System
+        run: uname -a
+
+      - name: Show Date
+        run: date
+
+      - name: Print Environment
+        run: env
